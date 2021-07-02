@@ -45,6 +45,8 @@
   width: 100%;
   min-width: 330px;
   min-height: 208px;
+  max-width: 475px;
+  max-height: 304px;
   margin: 1rem auto;
   padding: 2rem 0;
   background-color: hsl(228, 28%, 20%);
@@ -91,9 +93,8 @@
   height: 10px;
 }
 
-
-@media all and (max-width: 364px){
-  .bigcontainer{
+@media all and (max-width: 364px) {
+  .bigcontainer {
     min-width: auto;
     min-height: auto;
     width: 90vw;

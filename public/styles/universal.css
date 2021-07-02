@@ -1,4 +1,8 @@
 body{
+    width: 100%;
     margin: 0;
     font-family: 'Inter', sans-serif;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: hsl(230, 17%, 14%);
 }

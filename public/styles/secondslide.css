@@ -1,10 +1,10 @@
-.secondslide{
+.secondslide {
   padding-top: 3rem;
   background-color: hsl(232, 19%, 15%);
 }
 
-.secondslide-header{
-  padding: .5rem 1rem;
+.secondslide-header {
+  padding: 0.5rem 1rem;
   color: #fff;
 }
 
@@ -13,6 +13,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  max-width: 330px;
+  min-width: 128px;
   min-width: 330px;
   min-height: 96px;
   margin: 2rem auto;
@@ -54,9 +56,15 @@
   margin: 0;
 }
 
+@media all and (max-width: 720px) {
+  .smallcontainer {
+    max-width: none;
+    min-height: auto;
+  }
+}
 
-@media all and (max-width: 510px){
-  .secondslide-header{
+@media all and (max-width: 510px) {
+  .secondslide-header {
     font-size: 8vw;
   }
 }

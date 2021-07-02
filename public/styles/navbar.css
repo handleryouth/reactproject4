@@ -82,6 +82,13 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+@media all and (min-width: 1440px){
+  .navbar h1{
+    font-size: 3rem;
+  }
+}
+
+
 @media all and (max-width: 968px) {
   .navbar h1 {
     font-size: 2rem;
