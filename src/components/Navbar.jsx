@@ -1,6 +1,15 @@
 import React from "react";
 
 function Navbar() {
+  // use creacte context for this job
+  // const [state, setState] = useState(false);
+
+  // function ChangeColor() {
+  //   setState((prevState) => {
+  //     return !prevState;
+  //   });
+  // }
+
   return (
     <div className="navbar">
       <div>

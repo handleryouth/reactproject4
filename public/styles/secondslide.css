@@ -58,13 +58,21 @@
 
 @media all and (max-width: 720px) {
   .smallcontainer {
-    max-width: none;
-    min-height: auto;
+    width: 100%;
+    max-width: 475px;
+    max-height: 304px;
   }
 }
 
 @media all and (max-width: 510px) {
   .secondslide-header {
     font-size: 8vw;
+  }
+}
+
+@media all and (max-width: 355px) {
+  .smallcontainer {
+    min-width: unset;
+    width: 90vw;
   }
 }
