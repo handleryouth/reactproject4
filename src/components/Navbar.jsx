@@ -1,26 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 function Navbar() {
-  // use creacte context for this job
-  // const [state, setState] = useState(false);
+  const { state, setState, whiteBackground, blueFont, blackFont} =
+    useContext(ThemeContext);
 
-  // function ChangeColor() {
-  //   setState((prevState) => {
-  //     return !prevState;
-  //   });
-  // }
+  function ChangeColor() {
+    setState((prevState) => {
+      return !prevState;
+    });
+  }
 
   return (
-    <div className="navbar">
+    <div style={state ? whiteBackground : null} className="navbar">
       <div>
-        <h1>Social Media Dashboard</h1>
-        <p>Total Followers: 23,004</p>
+        <h1 style={state ? blackFont : null}>Social Media Dashboard</h1>
+        <p style={state ? blueFont : null}>Total Followers: 23,004</p>
       </div>
 
       <div className="navbar-mode">
-        <p>Dark Mode</p>
+        <p style={state ? blueFont : null}>Dark Mode</p>
         <label class="switch">
-          <input type="checkbox" />
+          <input onClick={ChangeColor} type="checkbox" />
           <span class="slider round"></span>
         </label>
       </div>

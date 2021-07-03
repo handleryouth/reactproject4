@@ -6,3 +6,11 @@ body{
     margin: 0 auto;
     background-color: hsl(230, 17%, 14%);
 }
+
+.green {
+    color: hsl(163, 72%, 41%);
+  }
+  
+  .red{
+    color : hsl(356, 69%, 56%);
+  }

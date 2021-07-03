@@ -1,12 +1,14 @@
-import React from "react";
+import React, {useContext} from "react";
 import Bigcontainer from "./Bigcontainer";
 import { Container, Row, Col } from "react-bootstrap";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 function Firstslide() {
 
+const {state, whiteBackground} = useContext(ThemeContext);
 
   return (
-    <div className="firstslide">
+    <div style={state ? whiteBackground : null } className="firstslide">
       <Container fluid>
         <Row>
           <Col>
@@ -18,6 +20,7 @@ function Firstslide() {
               gain="12"
               arrow="/images/icon-up.svg"
               borderstyle="facebookborder"
+              percentagecolor = "green"
             />
           </Col>
 
@@ -30,6 +33,7 @@ function Firstslide() {
               gain="99"
               arrow="/images/icon-up.svg"
               borderstyle="twitterborder"
+              percentagecolor = "green"
             />
           </Col>
 
@@ -42,6 +46,7 @@ function Firstslide() {
               gain="1099"
               arrow="/images/icon-up.svg"
               borderstyle="instagramborder"
+              percentagecolor = "green"
             />
           </Col>
 
@@ -54,6 +59,7 @@ function Firstslide() {
               gain="144"
               arrow="/images/icon-down.svg"
               borderstyle="youtubeborder"
+              percentagecolor = "red"
             />
           </Col>
         </Row>
