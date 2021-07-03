@@ -1,16 +1,17 @@
-body{
-    width: 100%;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    max-width: 1440px;
-    margin: 0 auto;
-    background-color: hsl(230, 17%, 14%);
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: hsl(230, 17%, 14%);
+  font-weight: 400;
 }
 
 .green {
-    color: hsl(163, 72%, 41%);
-  }
-  
-  .red{
-    color : hsl(356, 69%, 56%);
-  }
+  color: hsl(163, 72%, 41%);
+}
+
+.red {
+  color: hsl(356, 69%, 56%);
+}

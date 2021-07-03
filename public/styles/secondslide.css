@@ -1,6 +1,7 @@
 .secondslide {
   padding-top: 3rem;
   background-color: hsl(232, 19%, 15%);
+  font-weight: 700;
 }
 
 .secondslide-header {

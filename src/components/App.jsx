@@ -7,6 +7,8 @@ import { ThemeContext } from "../contexts/ThemeContext";
 function App() {
   const [state, setState] = useState(false);
 
+  console.log(state);
+
   const whiteBackground = {
     backgroundColor: "white",
   };
@@ -24,9 +26,10 @@ function App() {
   };
 
   let body = document.body;
-
   if (state === true) {
     body.style.backgroundColor = "white";
+  } else {
+    body.style.backgroundColor = "hsl(230, 17%, 14%)";
   }
 
   return (

@@ -78,6 +78,11 @@
   margin: 2rem 0;
 }
 
+.followers p{
+  letter-spacing: 0.3rem;
+}
+
+
 .percentage {
   display: flex;
   align-items: center;
